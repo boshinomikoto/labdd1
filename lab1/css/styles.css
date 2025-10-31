@@ -1,0 +1,236 @@
+/* Скидання відступів і включення box-sizing для всіх елементів */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Основні стилі для тіла сторінки */
+body {
+    font-family: Arial, sans-serif; 
+    line-height: 1.6; 
+    color: #333; /
+    background-color: #f5f5f5; 
+}
+
+/* Шапка сайту */
+header {
+    background: #2c5f7d; 
+    color: white; 
+    padding: 20px; 
+    text-align: center;
+}
+
+/* Навігаційне меню */
+.nav-menu {
+    list-style: none; 
+    display: flex; 
+    justify-content: center; 
+    margin-bottom: 10px; 
+}
+
+/* Стилізація посилань у меню */
+.nav-menu a {
+    color: white; 
+    text-decoration: none; 
+    padding: 8px 15px; 
+    margin: 0 10px; 
+}
+
+/* Ефект при наведенні на посилання */
+.nav-menu a:hover {
+    background-color: rgba(255, 255, 255, 0.2); 
+}
+
+/* Активне посилання */
+.nav-menu a.active {
+    background-color: #e89b3c; 
+}
+
+/* Основний контент */
+main {
+    max-width: 1200px; 
+    margin: 20px auto; 
+    padding: 0 10px; 
+}
+
+/* Секції та бічні блоки */
+section, aside {
+    background-color: white; 
+    padding: 20px; 
+    margin-bottom: 20px; 
+    border: 1px solid #ddd; 
+}
+
+/* Заголовки другого рівня */
+h2 {
+    color: #2c5f7d;
+    margin-bottom: 10px;
+}
+
+/* Цитати */
+blockquote {
+    background-color: #f5f5f5; 
+    border-left: 4px solid #e89b3c; 
+    padding: 15px; 
+    margin: 20px 0; 
+    font-style: italic;
+}
+
+/* Галерея фото */
+.photo-gallery {
+    display: grid; 
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px; 
+}
+
+/* Зображення в галереї */
+figure img {
+    width: 100%; 
+    height: 250px;
+    object-fit: cover; 
+}
+
+/* Розділене зображення з клікабельною половиною */
+.split-image {
+    position: relative; 
+    height: 250px; 
+}
+
+.split-image img {
+    width: 100%;
+    height: 100%; 
+    object-fit: cover; /* Зберігаємо пропорції */
+}
+
+.split-image a {
+    position: absolute; 
+    top: 0;
+    left: 0;
+    width: 50%; /* Клікабельна половина зображення */
+    height: 100%;
+}
+
+/* Ефект при наведенні на клікабельну область */
+.split-image a:hover {
+    background: rgba(0, 0, 0, 0.2);
+}
+
+/* Таблиці */
+table {
+    width: 100%;
+    border-collapse: collapse; 
+}
+
+/* Заголовок таблиці */
+thead {
+    background-color: #2c5f7d; 
+    color: white; 
+}
+
+/* Комірки таблиці */
+th, td {
+    padding: 12px; 
+    border-bottom: 1px solid #ddd;
+}
+
+/* Блок цікаві факти */
+.facts {
+    background: #fff9e6; 
+    border-left: 4px solid #ff9800; 
+}
+
+/* Поля форм */
+fieldset {
+    border: 1px solid #ddd; 
+    padding: 15px; 
+    margin-bottom: 15px; 
+}
+
+/* Група полів форми */
+.form-group {
+    margin-bottom: 15px; /* Відстань між полями */
+}
+
+/* Всі елементи вводу */
+input, select, textarea {
+    width: 100%;
+    padding: 10px; 
+    border: 1px solid #ccc;
+}
+
+/* Кнопки */
+button {
+    padding: 10px 15px; 
+    border: none; 
+    cursor: pointer;
+    margin-right: 10px; 
+}
+
+/* Основна кнопка */
+.btn-primary {
+    background-color: #2c5f7d;
+    color: white;
+}
+
+/* Додаткова кнопка */
+.btn-secondary {
+    background-color: #666;
+    color: white;
+}
+
+/* Накладення зображень (стек) */
+.image-stack {
+    position: relative; 
+    width: 500px; 
+    height: 300px;
+    margin: 40px auto; 
+}
+
+.image-stack img {
+    position: absolute; 
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+}
+
+/* Зсуви для накладених зображень */
+.image-stack img:nth-child(2) {
+    top: 10px;
+    left: 10px;
+}
+
+.image-stack img:nth-child(3) {
+    top: 20px;
+    left: -200px;
+}
+
+/* Зображення в інформаційному блоці */
+.topic-info img {
+    width: 200px; 
+}
+
+/* Плаваючі зображення */
+.float-left {
+    float: left; 
+    margin-right: 1rem; 
+}
+
+.float-right {
+    float: right;
+    margin-left: 1rem; 
+}
+
+/* Підвал сайту */
+footer {
+    background-color: #333; 
+    color: white; 
+    text-align: center; 
+    padding: 20px; 
+}
+
+/* Посилання у футері */
+footer a {
+    color: #e89b3c; 
+    text-decoration: none; 
+}

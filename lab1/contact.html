@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакти - Марія Склодовська-Кюрі</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <ul class="nav-menu">
+                <li><a href="index.html">Біографія</a></li>
+                <li><a href="contact.html" class="active">Контакти</a></li>
+            </ul>
+        </nav>
+        <h1>Контакти</h1>
+        <p class="subtitle">Зв'яжіться з нами</p>
+    </header>
+
+    <main>
+
+        <section class="info-blocks">
+            <h2>Інститути та Спадщина</h2>
+            <div class="image-stack">
+                <img src="https://images.pexels.com/photos/7735630/pexels-photo-7735630.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Інститут 1">
+                <img src="https://images.pexels.com/photos/5453811/pexels-photo-5453811.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Інститут 2">
+                <img src="https://images.pexels.com/photos/8218381/pexels-photo-8218381.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Інститут 3">
+            </div>
+        </section>
+
+        <section class="topic-info">
+            <h2>Піонер в науці</h2>
+
+            <img src="https://mir-roz.com.ua/image/cache/catalog/1262%20%D0%BC%D0%B0%D1%80%D0%B8%D1%8F%20%D0%BA%D1%8E%D1%80%D0%B8-1120x1120.jpg" 
+                 alt="Портрет Марії Кюрі" class="float-left">
+
+            <p>
+                Марія Склодовська-Кюрі була не просто вченим; вона була справжньою революціонеркою. 
+                Народившись у Варшаві, вона зіткнулася з численними перешкодами на шляху до освіти, 
+                але її жадоба знань привела її до Парижа. Вона стала першою жінкою, яка викладала в Сорбонні, 
+                і її робота назавжди змінила обличчя науки.
+            </p>
+
+            <img src="https://mir-roz.com.ua/image/cache/catalog/1262%20%D0%BC%D0%B0%D1%80%D0%B8%D1%8F%20%D0%BA%D1%8E%D1%80%D0%B8-1120x1120.jpg" 
+                 alt="Лабораторія П'єра і Марії Кюрі" class="float-right">
+
+            <p>
+                Разом зі своїм чоловіком П'єром, Марія присвятила своє життя дослідженню радіоактивності — 
+                термін, який вона сама і ввела. Їхня титанічна праця в скромній лабораторії призвела до 
+                відкриття двох нових хімічних елементів: <strong>полонію</strong>, названого на честь її 
+                батьківщини, і <strong>радію</strong>.
+            </p>
+
+            <img src="https://mir-roz.com.ua/image/cache/catalog/1262%20%D0%BC%D0%B0%D1%80%D0%B8%D1%8F%20%D0%BA%D1%8E%D1%80%D0%B8-1120x1120.jpg" 
+                 alt="Нобелівська медаль Марії Кюрі" class="float">
+
+            <p>
+                У 1903 році вона отримала Нобелівську премію з фізики. Після трагічної смерті П'єра, 
+                вона продовжила їхню спільну справу і в 1911 році отримала другу Нобелівську премію, 
+                цього разу з хімії. Вона залишається єдиною людиною в історії, що отримала Нобелівські 
+                премії в двох різних наукових галузях.
+            </p>
+
+        </section>
+
+
+        <section class="form-wrapper">
+            <h2>Форма Реєстрації</h2>
+            <form action="#" method="post">
+                <fieldset>
+                    <legend>Особиста інформація</legend>
+
+                    <div class="form-group">
+                        <label for="name">Ім'я</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="surname">Прізвище</label>
+                        <input type="text" id="surname" name="surname" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Стать</label>
+                        <div class="radio-group">
+                            <label><input type="radio" name="gender" value="male" required> Чоловіча</label>
+                            <label><input type="radio" name="gender" value="female"> Жіноча</label>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="age">Вік</label>
+                        <input type="number" id="age" name="age" min="16" max="120">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="bday">Дата народження</label>
+                        <input type="date" id="bday" name="bday">
+                    </div>
+                </fieldset>
+                
+                <fieldset>
+                    <legend>Контактна інформація</legend>
+
+                    <div class="form-group">
+                        <label for="country">Країна</label>
+                        <select id="country" name="country">
+                            <option value="">Оберіть країну</option>
+                            <option value="ua">Україна</option>
+                            <option value="pl">Польща</option>
+                            <option value="fr">Франція</option>
+                            <option value="other">Інша</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">Телефон</label>
+                        <input type="tel" id="phone" name="phone">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="social">Соцмережа</label>
+                        <input type="url" id="social" name="social">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="password">Пароль</label>
+                        <input type="password" id="password" name="password" required minlength="8">
+                    </div>
+
+                    <div class="form-group">
+                        <label>
+                            <input type="checkbox" name="agree" required>
+                            Згоден з умовами
+                        </label>
+                    </div>
+                </fieldset>
+
+                <button type="submit" class="btn-primary">Зареєструватися</button>
+                <button type="reset" class="btn-secondary">Скинути</button>
+            </form>
+        </section>
+
+        <section class="form-wrapper">
+            <h2>Форма Входу</h2>
+            <form action="#" method="post">
+                <fieldset>
+                    <legend>Дані для входу</legend>
+
+                    <div class="form-group">
+                        <label for="login">Логін</label>
+                        <input type="text" id="login" name="login" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="login-password">Пароль</label>
+                        <input type="password" id="login-password" name="password" required>
+                    </div>
+                    
+                </fieldset>
+
+                <button type="submit" class="btn-primary">Вхід</button>
+            </form>
+        </section>
+
+        <section class="form-wrapper">
+            <h2>Зворотній зв'язок</h2>
+            <form action="#" method="post">
+                <fieldset>
+                    <legend>Ваше повідомлення</legend>
+
+                    <div class="form-group">
+                        <label for="fb-name">Ім'я</label>
+                        <input type="text" id="fb-name" name="name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="fb-email">Email</label>
+                        <input type="email" id="fb-email" name="email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="subject">Тема</label>
+                        <input type="text" id="subject" name="subject" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Повідомлення</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                </fieldset>
+
+                <button type="submit" class="btn-primary">Відправити</button>
+            </form>
+        </section>
+
+        <aside class="contact-info">
+            <h2>Контактна Інформація</h2>
+            <p><strong>Адреса:</strong> вул. Наукова, 15, Київ</p>
+            <p><strong>Телефон:</strong> +380 44 123 45 67</p>
+            <p><strong>Email:</strong> info@curie-bio.ua</p>
+        </aside>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 | Марія Склодовська-Кюрі</p>
+        <p>Email: <a href="mailto:info@curie-bio.ua">info@curie-bio.ua</a></p>
+    </footer>
+</body>
+</html>
